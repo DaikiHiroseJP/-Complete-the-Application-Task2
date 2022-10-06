@@ -3,14 +3,19 @@
 <%= form_with model: @book do |f| %>
 
 
-  <h4>Titleh4</h4>
-  <%= f.text_area :title %>
+  <div class="field">
+    <label for="book_title">Title</label><br>
+    <input class="book_title" type="text" <%= f.text_field :title %>
+  </div>
 
-  <h4>Body</h4>
-  <%= f.text_area :body %>
+  <div class="field">
+    <label for="book_body">Body</label><br>
+    <%= f.text_area :body %>
+  </div>
 
-  <%= f.submit 'Update Book' %>
+  <div class="actions">
+    <%= f.submit 'Update Book' %>
+  </div>
   <%= link_to 'Show', "/books/#{@book.id}" %> |
-  <%= link_to 'Back', :back %>
-
+  <%= link_to 'Back', "/books" %>
 <% end %>
