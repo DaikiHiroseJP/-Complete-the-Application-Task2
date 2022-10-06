@@ -14,11 +14,6 @@
  *= require_self
  */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background-color: #fff;
@@ -29,6 +24,3 @@ body {
   font-size: 13px;
 }
 
-p {
-  margin: 33px;
-}
